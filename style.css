@@ -1,0 +1,170 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	background-color: #F0FFF0;
+}
+
+/* Header side */
+header {
+	overflow: hidden;
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	background-color: #F5DEB3;
+}
+
+.logo {
+	position: relative;
+	width: 170px;
+	height: 30px;
+	top: 40px;
+}
+
+.navigation {
+	text-align: right;
+}
+
+.headerContent {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	display: inline-block;
+	padding: 0 10px 5px 10px;
+	font-size: 20px;
+}
+
+
+/* Welcome section and sign-in in Main*/
+.welcome {
+	width: 100%;
+	height: 250px;
+	padding-top: 150px;
+	text-align: center;
+}
+
+h1 {
+	font-family: arial;
+}
+
+#email {
+	height: 25px;
+	width: 250px;
+	border-color: orange;
+}
+
+#submit {
+	background-color: orange;
+	padding-top: 3px;
+	margin-top: 25px;
+	width: 150px;
+	font-size: 17px;
+	font-weight: 800;
+	border-radius: 5px;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+
+/* Quality description section */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.itemPic {
+	padding-top: 10px;
+	width: 20%;
+	height: 150px;
+}
+
+.item {
+	width: 75%;
+	height: 150px;
+	margin-left: 15px;
+}
+
+.shipping-imgs {
+	width: 100px;
+	height: 80px;
+	text-align: center;
+}
+
+.p-title {
+	font-size: 25px;
+}
+
+.item > p {
+	font-size: 20px;
+}
+
+
+/* Video Content */
+.video {
+	text-align: center;
+	height: 400px;
+}
+
+
+/* Price section */
+.item1 {
+	width: 30%;
+	margin-left: auto;
+	margin-left: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	margin: 10px;
+	padding-top: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.item1 > h3 {
+	background-color: #C0C0C0;
+	width: 100%;
+	position: relative;
+	bottom: 19px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.itemCash {
+	font-size: 30px;
+}
+
+.item1 > p {
+	font-size: 20px;
+}
+
+.button {
+	padding: 7px 16px 7px 16px;
+	font-size: 18px;
+	background: yellow;
+	border-width: 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+footer {
+	width: 90%;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightgray;
+	line-height: 10px;
+}
+
+.navigation {
+	padding-top: 20px;
+	padding-right: 5px;
+}

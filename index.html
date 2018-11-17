@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="A Product Landing Page project of FCC made by Alexis Ange Dauli">
+	<title>Product Landing Page</title>
+	<link rel="icon" type="image/jpg" href="image/alex.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		@media screen and (max-width: 560px) {
+			/* Header */
+			.logo {
+				position: relative;
+				width: 150px;
+				height: 25px;
+				top: 5px;
+			}
+
+			li {
+				display: block;
+			}
+			
+			.ul-nav {
+				text-align: center;
+			}
+
+			.headerContent {
+				text-align: center;
+				margin-right: 0;
+				margin-left: 0;
+			}
+
+			h1 {
+				font-size: 25px;
+			}
+
+			#email {
+				height: 25px;
+				max-width: 80%;
+				border-color: orange;
+			}
+			/* end */
+
+			/* Video Content */
+			.iframe {
+				text-align: center;
+				max-width: 90%;
+				margin-right: auto;
+				margin-left: 5%;
+			}
+
+			/* Quality description section */
+			.itemPic {
+				text-align: center;
+				padding-top: 10px;
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				height: 80px;
+			}
+
+			.item {
+				text-align: center;
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				height: 200px;
+			}
+
+			.p-title {
+				font-size: 16px;
+			} 
+			/* end */
+
+			/* Price section */
+			.item1 {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			/* footer */
+			footer {
+				height: 120px;
+				width: 100%;
+			}
+		}
+
+
+		@media screen and (min-width: 561px) and (max-width: 737px) {
+			/* Price section */
+			.item1 {
+				width: 45%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+
+		@media screen and (min-width: 1000px) {
+			.headerContent {
+				margin-left: 100px;
+				margin-right: 100px;
+			}
+
+			.container {
+				width: 1000px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			.itemPic {
+				margin-right: 0;
+			}
+
+			.itemPic {
+				padding-top: 10px;
+				width: 10%;
+				height: 150px;
+				margin-left: 10%;
+				margin-right: 10px;
+			}
+			
+			.middleItem {
+				margin-right: 25px;
+				margin-left: 25px;
+			}
+			.item {
+				width: 70%;
+				height: 150px;
+				margin-left: 25px;
+			}
+
+			footer {
+				width: 990px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Hearder section -->
+	<header id="header">
+		<div  class="headerContent">
+			<img id="header-img" class="logo" src="image/original_trombones.png"
+			alt="company logo">
+
+			<nav id="nav-bar" class="navigation">
+				<ul class="ul-nav">
+					<a class="nav-link" href="#pricing">
+						<li >Pricing</li>
+					</a>
+					<a class="nav-link" href="#howItWork">
+						<li>How It Works</li>
+					</a>
+					<a class="nav-link" href="#features">
+						<li >Features</li>
+					</a>
+				</ul>
+			</nav>
+		</div>		
+	</header>
+
+	
+	<!-- Main content -->
+	<main>
+		<!-- Welcome and sign-in section -->
+		<div class="welcome">
+			<h1>Handcraft, home-made masterpieces</h1>
+			<form id="form" 
+			action="https://www.freecodecamp.com/email-submit">
+				<input id="email" 
+				placeholder="Enter your email here" 
+				type="email" name="email" required><br>
+				<input id="submit" type="submit" value="GET STARTED" name="submit">
+			</form>
+		</div>
+
+		<!-- Quality description section -->
+		<div class="container" id="features">
+			<div class="itemPic">
+				<img class="shipping-imgs" src="image/premium.gif" alt="premium material">
+			</div>
+			<div class="item">
+				<p>
+					<span class="p-title">
+						<strong>Premium Materials</strong>
+					</span><br>
+					Our trombones use the shiniest brass which is
+					sourced locally. This will increase the longevity 
+					of your purchase.
+				</p>
+			</div>
+
+			<div class="itemPic">
+				<img class="shipping-imgs" src="image/expressDel.png" alt="express delivery">
+			</div>
+			<div class="item">
+				<p>
+					<span class="p-title">
+						<strong>Fast Shipping</strong>
+					</span><br>
+					We make sure you recieve your trombone as soon as
+					we have finished making it. We also provide free
+					returns if you are not satisfied.
+				</p>
+			</div>
+
+			<div class="itemPic">
+				<img class="shipping-imgs" src="image/quality.png" alt="quality service">
+			</div>
+			<div class="item">
+				<p>
+					<span class="p-title">
+						<strong>Quality Assurance</strong>
+					</span><br>
+					For every purchase you make, we will ensure there
+					are no damages or faults and we will check and
+					test the pitch of your instrument.
+				</p>
+			</div>
+		</div>
+		
+		<!-- Video embeded from youtube -->
+		<div class="video" id="howItWork">
+			<iframe id="video" class="iframe" width="560" height="315" 
+			src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
+			frameborder="0" allow="accelerometer; autoplay; 
+			encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		</div>
+		
+		<!-- Price section -->
+		<div class="container" id="pricing">
+			<div class="item1">
+				<h3>TENOR TROMBON</h3>
+				<p>
+					<strong class="itemCash">$600</strong><br>
+					Lorem ipsum.<br>
+					Lorem ipsum.<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum
+				</p>
+				<button class="button">SELECT</button>
+			</div>
+			<div class="item1 middleItem">
+				<h3>BASS TROMBON</h3>
+				<p>
+					<strong class="itemCash">$900</strong><br>
+					Lorem ipsum.<br>
+					Lorem ipsum.<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum
+				</p>
+				<button class="button">SELECT</button>
+			</div>
+			<div class="item1">
+				<h3>VALVE TROMBON</h3>
+				<p>
+					<strong class="itemCash">$1200</strong><br>
+					Lorem ipsum.<br>
+					Lorem ipsum.<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum
+				</p>
+				<button class="button">SELECT</button>
+			</div>
+		</div><br><br>
+	</main>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="navigation">
+			<ul class="footer-ul">
+				<a href="#"><li>Privacy</li></a>
+				<a href="#"><li>Terms</li></a>
+				<a href="https://Dauli.github.io/Portfolio">
+					<li>Contact</li>
+				</a>
+			</ul>
+			<p class="p-footer">Copyright 2018, Original Trombon</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
